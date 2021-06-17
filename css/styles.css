@@ -1,5 +1,40 @@
 :root {
+  --color-text: #170C04;
+  --color-link: #E27B3A;
+  --color-form-bg: #2E96FF;
+  --color-white: #fff;
+  --font-stack: "Poppins", "Arial", sans-serif;
+  --font-text: "Roboto", "Arial", sans-serif;
 }
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Medium.woff2') format('woff2'),
+      url('../fonts/Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+      url('../fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
+      url('../fonts/Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
 
 /* GENERAL */
 html {
@@ -20,7 +55,7 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: "Poppins" "Arial", sans-serif;
   background-color: #fff;
 }
 
@@ -48,4 +83,87 @@ img {
   padding-right: 50px;
   margin-left: auto;
   margin-right: auto;
+}
+
+/* PRODUCTS SECTION  */
+
+.products {
+  padding-top: 113px;
+}
+
+.products-info {
+  width: 505px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.products__title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 32.25px;
+  line-height: 48px;
+  text-align: center;
+  color: var(--color-text);
+  font-family: var(--font-stack);
+}
+
+.products__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: var(--color-text);
+  font-family: var(--font-text);
+  opacity: 0.6;
+  margin-top: 18px;
+}
+
+.products__list {
+  display: flex;
+  margin: 0;;
+  padding: 0;
+  list-style: none;
+  margin-top: 25px;
+}
+
+.products__item:not(:first-child) {
+  width: 555px;
+  margin-left: 30px;
+}
+
+.product-img__wrapper {
+  padding: 70px 90px;
+  background-color: #FCF2EB;
+}
+
+.product-img__wrapper--second {
+  padding: 80px 125px;
+}
+
+
+.product__name {
+  margin: 0;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 37px;
+  text-align: center;
+  color: var(--color-text);
+  font-family: var(--font-stack);
+}
+
+.product-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.products__link {
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: var(--color-link);
+  font-family: var(--font-text);
+  margin-top: 10px;
 }
