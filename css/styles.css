@@ -1,12 +1,12 @@
 :root {
+  --font-stack: "Poppins", "Arial", sans-serif;
+  --font-text: "Roboto", "Arial", sans-serif;
   --color-text: #170C04;
   --color-link: #E27B3A;
   --color-form-bg: #2E96FF;
   --color-white: #fff;
-  --font-stack: "Poppins", "Arial", sans-serif;
-  --font-text: "Roboto", "Arial", sans-serif;
-}
 
+}
 
 @font-face {
   font-family: 'Poppins';
@@ -33,7 +33,10 @@
   font-weight: normal;
   font-style: normal;
   font-display: swap;
+  --font-stack: "Poppins", "Arial", sans-serif;
+  --font-text: "Roboto", "Arial", sans-serif;
 }
+
 
 
 
@@ -99,6 +102,110 @@ img {
   margin-right: auto;
 }
 
+/* HEADER */
+
+.bg-img {
+  background-image: url("../img/yellow-bgimg.svg");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 500px) 5px;
+}
+
+.site-header {
+  padding-top: 41px;
+  padding-bottom: 22px;
+}
+
+.site-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.site-nav__list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+}
+
+.site-nav__link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: var(--color-text);
+  text-decoration: none;
+  margin-right: 55px;
+}
+
+.cards-link {
+  margin-right: 40px;
+  text-decoration: none;
+}
+
+.cards-link:last-child {
+  margin: 0;
+}
+
+.site-hero {
+  padding-bottom: 300px;
+}
+
+.site-hero__content {
+  position: relative;
+  width: 613px;
+  padding-top: 150px;
+}
+
+.site-hero__content::after {
+  position: absolute;
+  width: 916px;
+  height: 611px;
+  content: "";
+  top: 20px;
+  left: 330px;
+  background-image: url("../img/dog\ \(2\).png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.site-hero__title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 100px;
+  line-height: 120px;
+  color: #170C04;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+
+.hero-buy__link {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-size: 16px;
+  line-height: 24px;
+  border-radius: 24px;
+  background-color: var(--color-link);
+  color: var(--color-white);
+}
+
+.hero-see__link {
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  padding: 12px 30px;
+  margin-left: 20px;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.15;
+  border: 1px solid #E27B3A;
+  box-sizing: border-box;
+  border-radius: 24px;
+  color: var(--color-link);
+  
+}
 .products__title {
   margin: 0;
   font-weight: 500;
